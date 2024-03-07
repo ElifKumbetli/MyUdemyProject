@@ -98,20 +98,20 @@ namespace HotelProject.DataAccessLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StaffID"));
 
-                    b.Property<int>("Name")
-                        .HasColumnType("int");
+                    b.Property<string>("Name")
+                        .HasColumnType("string");
 
-                    b.Property<int>("SocialMedia1")
-                        .HasColumnType("int");
+                    b.Property<string>("SocialMedia1")
+                        .HasColumnType("string");
 
-                    b.Property<int>("SocialMedia2")
-                        .HasColumnType("int");
+                    b.Property<string>("SocialMedia2")
+                        .HasColumnType("string");
 
-                    b.Property<int>("SocialMedia3")
-                        .HasColumnType("int");
+                    b.Property<string>("SocialMedia3")
+                        .HasColumnType("string");
 
-                    b.Property<int>("Title")
-                        .HasColumnType("int");
+                    b.Property<string>("Title")
+                        .HasColumnType("string");
 
                     b.HasKey("StaffID");
 

@@ -51,11 +51,11 @@ namespace HotelProject.DataAccessLayer.Migrations
                 {
                     StaffID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<int>(type: "int", nullable: false),
-                    Title = table.Column<int>(type: "int", nullable: false),
-                    SocialMedia1 = table.Column<int>(type: "int", nullable: false),
-                    SocialMedia2 = table.Column<int>(type: "int", nullable: false),
-                    SocialMedia3 = table.Column<int>(type: "int", nullable: false)
+                    Name = table.Column<string>(type: "string", nullable: false),
+                    Title = table.Column<string>(type: "string", nullable: false),
+                    SocialMedia1 = table.Column<string>(type: "string", nullable: false),
+                    SocialMedia2 = table.Column<string>(type: "string", nullable: false),
+                    SocialMedia3 = table.Column<string>(type: "string", nullable: false)
                 },
                 constraints: table =>
                 {

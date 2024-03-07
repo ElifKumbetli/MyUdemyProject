@@ -1,5 +1,6 @@
 ﻿using HotelProject.BusinessLayer.Abstract;
 using HotelProject.DataAccessLayer.Abstract;
+using HotelProject.DataAccessLayer.EntityFramework;
 using HotelProject.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,9 @@ namespace HotelProject.BusinessLayer.Concrete
         public StaffManager(IStaffDal staffDal)
         {
             _staffDal = staffDal;
+
         }
+
 
         public void TDelete(Staff t)
         {
@@ -36,6 +39,7 @@ namespace HotelProject.BusinessLayer.Concrete
         {
             _staffDal.Insert(t);
         }
+               
 
         public void TUpdate(Staff t)
         {
