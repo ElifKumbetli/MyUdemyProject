@@ -1,1 +1,9 @@
-Api Testi ve Swagger
+--Api Testi ve Swagger
+Temayý ekleyelim
+Register - Login
+
+
+Onay Bekliyor
+Onaylandý
+Ýptal Edildi
+Bekletiliyor

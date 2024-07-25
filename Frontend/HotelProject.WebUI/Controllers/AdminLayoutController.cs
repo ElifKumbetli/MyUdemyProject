@@ -23,6 +23,7 @@ namespace HotelProject.WebUI.Controllers
         {
             return PartialView();
         }
+        
 
         public PartialViewResult HeaderPartial()
         {

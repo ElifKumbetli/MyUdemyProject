@@ -20,6 +20,5 @@ namespace HotelProject.EntityLayer.Concrete
 
         public string? SocialMedia3 { get; set; }
 
-
     }
 }

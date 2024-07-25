@@ -1,9 +1,9 @@
-
 using HotelProject.BusinessLayer.Abstract;
 using HotelProject.BusinessLayer.Concrete;
 using HotelProject.DataAccessLayer.Abstract;
 using HotelProject.DataAccessLayer.Concrete;
 using HotelProject.DataAccessLayer.EntityFramework;
+using AutoMapper;
 
 namespace HotelProject.WebApi
 {
@@ -29,6 +29,14 @@ namespace HotelProject.WebApi
 
             builder.Services.AddScoped<ITestimonialDal, EfTestimonialDal>();
             builder.Services.AddScoped<ITestimonialService, TestimonialManager>();
+
+            builder.Services.AddScoped<IAboutDal, EfAboutDal>();
+            builder.Services.AddScoped<IAboutService, AboutManager>();
+
+
+            builder.Services.AddScoped<IBookingDal,EfBookingDal>();
+            builder.Services.AddScoped<IBookingService, BookingManager>();
+
 
             builder.Services.AddAutoMapper(typeof(Program));
 
